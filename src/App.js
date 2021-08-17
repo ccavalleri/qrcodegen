@@ -28,6 +28,11 @@ function App() {
         onChange={(e) => setUrlQr(e.target.value)}
         style={{ width: '400px' }}
       />
+
+      <div className="copyright">
+        {' '}
+        <hr />© 2021 Bacetech ltd. All Rights Reserved.{' '}
+      </div>
     </div>
   );
 }
