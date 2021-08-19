@@ -6,7 +6,7 @@ function App() {
   const [urlQr, setUrlQr] = useState('https://www.tenutafontana.com/alberata');
   return (
     <div className="App" style={{ margin: '5px' }}>
-      <h2>Proposte:</h2>
+      <h2>QR Codegit add .:</h2>
       <select onChange={(e) => setUrlQr(e.target.value)}>
         <option value="https://www.tenutafontana.com/alberata">Alberata</option>
         <option value="https://www.tenutafontana.com/civico-1/">
