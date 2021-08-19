@@ -8,24 +8,30 @@ function App() {
     <div className="App" style={{ margin: '5px' }}>
       <h2>Proposte:</h2>
       <select onChange={(e) => setUrlQr(e.target.value)}>
-        <option value="https://www.tenutafontana.com/alberata">
-          Alberata - Tenuta Fontana
+        <option value="https://www.tenutafontana.com/alberata">Alberata</option>
+        <option value="https://www.tenutafontana.com/civico-1/">
+          Civico 1
         </option>
-        <option value="https://www.tenutafontana.com/shop/index.php?route=product/product&path=63&product_id=64">
-          Alberata - Tenuta Fontana Shop
+        <option value="https://www.tenutafontana.com/civico-2/">
+          Civico 2
         </option>
-        <option value="https://www.youtube.com/watch?v=B80_T55OeDw">
-          Alberata - Tenuta Fontana Youtube
+        <option value="https://www.tenutafontana.com/civico-28/">
+          Civico 28
         </option>
+        <option value="https://www.tenutafontana.com/civico-44/">
+          Civico 44
+        </option>
+        <option value="https://www.tenutafontana.com/olmo/">Olmo</option>
       </select>
       <div style={{ margin: '15px' }}>
         <QRCode value={urlQr} />
       </div>
-      <h2>Visualizza o inserisci url:</h2>
+      <h2>Indirizzo Web:</h2>
       <input
         type="text"
         value={urlQr}
         onChange={(e) => setUrlQr(e.target.value)}
+        disabled
         style={{ width: '400px' }}
       />
 
