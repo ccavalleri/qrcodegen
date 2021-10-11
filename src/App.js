@@ -31,7 +31,6 @@ function App() {
         type="text"
         value={urlQr}
         onChange={(e) => setUrlQr(e.target.value)}
-        disabled
         style={{ width: '400px' }}
       />
 
